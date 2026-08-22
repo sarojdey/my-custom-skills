@@ -7,14 +7,14 @@ Custom skills for AI coding agents (Antigravity, Claude Code, etc.).
 Run this in your project root to copy/update skills into `.agents/skills`:
 
 ```bash
-npx -y degit sarojdey/my-custom-skills#master .agents/skills --force
+npx -y degit sarojdey/my-custom-skills/skills#master .agents/skills --force
 ```
 
 ## Skills
 
 | Skill | Command | Description |
 | :--- | :--- | :--- |
-| **[autopsy](./autopsy)** | `autopsy`, `/autopsy` | Audit and diagnose unfamiliar/legacy code before refactoring |
-| **[lets-talk](./lets-talk)** | `/lets-talk` | Read-only codebase investigation and architectural discussion |
-| **[my-work-report](./my-work-report)** | `/my-work-report` | Generate daily work report for your commits |
-| **[team-work-report](./team-work-report)** | `/team-work-report` | Generate branch-wide team progress and commit report |
+| **[autopsy](./skills/autopsy)** | `autopsy`, `/autopsy` | Audit and diagnose unfamiliar/legacy code before refactoring |
+| **[lets-talk](./skills/lets-talk)** | `/lets-talk` | Read-only codebase investigation and architectural discussion |
+| **[my-work-report](./skills/my-work-report)** | `/my-work-report` | Generate daily work report for your commits |
+| **[team-work-report](./skills/team-work-report)** | `/team-work-report` | Generate branch-wide team progress and commit report |
