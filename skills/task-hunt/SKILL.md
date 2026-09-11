@@ -78,13 +78,15 @@ For each session, append a topic section. Get the timestamp from the `ADDITIONAL
 
 ```markdown
 ## Topic: <Descriptive Area Name>
-_Captured at <HH:MM> — from: [SourceFile.jsx](file:///path/to/SourceFile.jsx#L10-L40)_
+_Captured at <HH:MM> — from: [SourceFile.jsx](../../path/to/SourceFile.jsx)_
 
-- [ ] **<Task title>**: <What needs to happen and why>. ([file.jsx:L10-L25](file:///path/to/file.jsx#L10-L25))
+- **<Task title>**: <What needs to happen and why>. See [file.jsx:L10-L25](../../path/to/file.jsx)
   - Sub-note only when there's a genuine nuance, tradeoff, or gotcha worth recording.
 
-- [ ] **<Another task>**: One-liner when nothing else needs saying. ([anotherFile.js:L50](file:///path/to/anotherFile.js#L50))
+- **<Another task>**: One-liner when nothing else needs saying. See [anotherFile.js:L50](../../path/to/anotherFile.js)
 ```
+
+**Link format rule**: Use relative paths from the ledger file (`.scratch/tasks/`) to the target file. The ledger is 2 directories deep from the workspace root, so most links start with `../../`. Never use absolute `file:///` paths — they break in markdown preview.
 
 Before writing, scan existing tasks in the target ledger for overlapping file paths or similar titles. If near-duplicates exist, flag them to the user during Step 2 instead of silently creating redundant entries.
 
